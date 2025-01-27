@@ -88,7 +88,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      {/* Footer Bottom */}
+
       <div className="text-center border-top border-secondary pt-3">
         <p className="text-muted mb-0">
           &copy; {new Date().getFullYear()} Your Company. All rights reserved.
