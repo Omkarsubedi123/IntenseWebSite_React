@@ -4,7 +4,7 @@ import DownArrow from "../../../public/Icon.png";
 const QNA = () => {
   const [show, setShow] = useState();
 
-  const handleClick = (index) => {
+  const handleClick = (index: any) => {
     setShow(show === index ? null : index);
   };
 

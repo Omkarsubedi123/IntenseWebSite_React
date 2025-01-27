@@ -5,7 +5,7 @@ const Download = () => {
     <div>
       <Header />
 
-      <h1>This is Download Page.</h1>
+      <h1>This is Download Page. Go to Feature Page</h1>
     </div>
   );
 };

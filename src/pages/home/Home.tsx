@@ -4,7 +4,7 @@ const Home = () => {
     <div>
       <Header />
 
-      <h1>This is a Home Page. </h1>
+      <h1>This is a Home Page. Go to Feature Page </h1>
     </div>
   );
 };

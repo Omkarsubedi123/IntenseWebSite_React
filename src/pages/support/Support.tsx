@@ -5,7 +5,7 @@ const Support = () => {
     <div>
       <Header />
 
-      <h1>This is Support Page.</h1>
+      <h1>This is Support Page. Go to Feature Page</h1>
     </div>
   );
 };

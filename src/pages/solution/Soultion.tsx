@@ -4,7 +4,7 @@ const Soultion = () => {
   return (
     <div>
       <Header />
-      <h1>This is Solution Page.</h1>
+      <h1>This is Solution Page. Go to Feature Page</h1>
     </div>
   );
 };
