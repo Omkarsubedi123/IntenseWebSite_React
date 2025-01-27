@@ -42,7 +42,11 @@ const Header = () => {
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-3">
               {NavBar.map((item) => (
                 <li className="nav-item" key={item.title}>
-                  <NavLink className="nav-link text-dark" to={item.path}>
+                  <NavLink
+                    // style={`{.nav-hover:hover{color:"green"}}`}
+                    className="nav-link text-dark nav-hover"
+                    to={item.path}
+                  >
                     {item.title}
                   </NavLink>
                 </li>
@@ -64,6 +68,13 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <style>
+        {`
+          .nav-hover:hover {
+            color: red !important ;
+          }
+        `}
+      </style>
     </div>
   );
 };

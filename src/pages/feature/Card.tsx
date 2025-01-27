@@ -106,47 +106,75 @@ const Card = () => {
 
       {/*---------------Second Layout----------------*/}
 
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12 col-md-12 col-sm-12">
+      <div className="container py-3">
+        <div className="row justify-content-center">
+          <div className="col-lg-12">
             <div
               style={{
                 backgroundImage:
                   "linear-gradient(to right, #0f4538, #195043, #0a412e)",
                 position: "relative",
                 borderRadius: "20px",
+                overflow: "hidden",
               }}
-              className="image col-lg-12 col-md-12 col-sm-12"
+              className="d-flex align-items-center p-3"
             >
-              <img src={Layout} alt="Layout" />
+              <img
+                src={Layout}
+                alt="Layout"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "20px",
+                }}
+              />
+
               <div
                 style={{
-                  display: "flex",
-                  color: "white",
                   position: "absolute",
-                  top: 60,
-                  paddingLeft: "20px",
+                  color: "white",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  textAlign: "center",
+                  width: "90%",
                 }}
-                className="textContent"
               >
-                <div className="text">
-                  <h2>Haven't found what you need?</h2>
-                  <p>Get in touch, we are happy to help you.</p>
-                </div>
-                <div
+                <h2
                   style={{
-                    position: "absolute",
-                    left: 1200,
-                    width: 80,
+                    fontSize: "2rem",
+                    marginBottom: "1rem",
                   }}
-                  className="imageSec"
                 >
-                  <img
-                    style={{ width: "100%" }}
-                    src={ArrowSecond}
-                    alt="Arrow"
-                  />
-                </div>
+                  Haven't found what you need?
+                </h2>
+                <p
+                  style={{
+                    fontSize: "1.2rem",
+                    marginBottom: "1.5rem",
+                  }}
+                >
+                  Get in touch, we are happy to help you.
+                </p>
+              </div>
+
+              {/* Arrow Section */}
+              <div
+                style={{
+                  position: "absolute",
+                  right: "20px",
+                  bottom: "20px",
+                  width: "50px",
+                }}
+                className="arrow-container"
+              >
+                <img
+                  src={ArrowSecond}
+                  alt="Arrow"
+                  style={{
+                    width: "100%",
+                  }}
+                />
               </div>
             </div>
           </div>
